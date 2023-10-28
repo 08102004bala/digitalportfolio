@@ -1,0 +1,49 @@
+     .container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+      }
+
+      .car-types {
+         display: flex;
+         flex-wrap: wrap;
+      }
+
+      .car-card {
+         width: 200px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         margin: 10px;
+         padding: 10px;
+      }
+
+      .car-details-container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+      }
+      
+      .customer-details-container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+      }   
+
+      .purchase-container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+      }
+
+      .payment-container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+      }
+
+      .home-container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+      }
+   

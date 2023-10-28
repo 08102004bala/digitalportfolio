@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<body background="bike4.png">
+   <title>car Shop</title>
+   <link rel="stylesheet" type="text/css" href="9.css">
+</head>
+
+<body>
+   <center><h2>YAMAHA BIKE SHOWROOM</h2>
+   <div class="container">
+      <div class="car-types">
+         <div class="car-card">
+            <center><h3>R15 V3</h3></center>
+            <center><img src="bike1.jpeg" width=100 height=100></center>
+            <center><button onclick="displaycarDetails('R15')">Add to Cart</button></center>
+         </div>
+         <div class="car-card">
+           <center> <h3>R15 V4</h3></center>
+			<center><img src="bike2.jpeg" width=100 height=100></center>
+			<center><button onclick="displaycarDetails('R15 v4')">Add to Cart</button></center>
+         </div>
+         <div class="car-card">
+           <center> <h3>R15V4 M</h3></center>
+			<center><img src="bike3.jpeg" width=100 height=100></center>
+            <center><button onclick="displaycarDetails('R15v4 M')">Add to Cart</button></center>
+         </div>
+      </div>
+   </div>
+   
+   <div id="carDetailsContainer" class="car-details-container" style="display: none;">
+      <h3 id="carType"></h3>
+      <p>Rate with exchange: RS-500000/-</p>
+      <p>Rate without exchagnge: Rs-700000/-</p>
+      <button onclick="displayPurchase()">Purchase</button>
+   </div>
+   
+   <div id="purchaseContainer" class="purchase-container" style="display: none;">
+      <h3>Purchase</h3>
+      <p>Customer Name: <input type="text" id="customerName"></p>
+      <p>Buying item: <span id="carTypePurchase"></span></p>
+      <p>with exchange: <input type="checkbox" id="with exchange"></p>
+      <button onclick="displayPayment()">Make Payment</button>
+   </div>
+
+   <div id="paymentContainer" class="payment-container" style="display: none;">
+      <h3>Payment</h3>
+      <p>Buying item: <span id="carTypePayment"></span></p>
+      <p>Customer: <span id="customerDetails"></span></p>
+      <p>Price: <span id="price"></span></p>
+      <h4>Enter Card Details:</h4>
+      <input type="text" placeholder="Card Number">
+      <input type="text" placeholder="CVV">
+      <button onclick="returnHome()">Pay</button>
+   </div>
+
+   <div id="homeContainer" class="home-container" style="display: none;">
+      <p><h2>Thank you for your purchase! Enjoy your car!<h2></p> 
+   </div>
+
+   <script src="9.js"></script>
+</body>
+
+</html>
